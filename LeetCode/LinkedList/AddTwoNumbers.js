@@ -11,7 +11,7 @@
  * @return {ListNode}
  */
 
-// 내가 생각한 답 (오답)
+// 내가 생각한 답 (오답) -> 숫자가 커질 때 1e+3 이런식으로 바뀌므로 문제가 됨
 var addTwoNumbers = function (l1, l2) {
   let n1 = [];
   let n2 = [];
