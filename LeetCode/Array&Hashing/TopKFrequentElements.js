@@ -1,59 +1,19 @@
-// My solution
 /**
  * @param {number[]} nums
  * @param {number} k
  * @return {number[]}
  */
 var topKFrequent = function (nums, k) {
-  const obj = {};
-
-  for (const num of nums) {
-    obj[num] = obj[num] ? obj[num] + 1 : 1;
-  }
-
-  const sorted = Object.entries(obj).sort(([, a], [, b]) => b - a);
-
-  const answer = [];
-
-  for (let i = 0; i < k; i++) {
-    answer.push(+sorted[i][0]);
-  }
-
-  return answer;
-};
-
-// other solution using bucket sort
-/**
- * @param {number[]} nums
- * @param {number} k
- * @return {number[]}
- */
-var topKFrequent = function (nums, k) {
-  const answer = [];
-  const bucket = [];
-  const map = new Map();
-
-  for (let i = 0; i <= nums.length; i++) {
-    bucket.push([]);
-  }
+  const map = {};
 
   for (let num of nums) {
-    map.set(num, (map.get(num) || 0) + 1);
+    map[num] ? (map[num] += 1) : (map[num] = 1);
   }
 
-  for (let [num, freq] of map) {
-    bucket[freq].push(num);
-  }
-
-  for (let i = bucket.length - 1; i >= 0; i--) {
-    if (bucket[i]) {
-      answer.push(...bucket[i]);
-    }
-
-    if (answer.length >= k) {
-      break;
-    }
-  }
-
-  return answer;
+  return Object.entries(map)
+    .sort((a, b) => b[1] - a[1])
+    .map((e) => +e[0])
+    .slice(0, k);
 };
+
+console.log(topKFrequent([1], 1));
