@@ -3,28 +3,23 @@
  * @return {number}
  */
 var maxProfit = function (prices) {
-  let s = 0;
-  let e = 0;
-  let maxProfit = 0;
+  let [l, r] = [0, 1];
+  let res = 0;
 
-  while (s !== prices.length && e !== prices.length) {
-    if (s === e) {
-      e++;
-      continue;
-    }
+  while (l < prices.length && r < prices.length) {
+    let profit = prices[r] - prices[l];
 
-    const profit = prices[e] - prices[s];
-    if (profit >= 0) {
-      maxProfit = Math.max(maxProfit, profit);
-      if (e === prices.length - 1) {
-        s++;
-      } else {
-        e++;
-      }
+    if (prices[l] > prices[r]) {
+      l = r;
+      r++;
     } else {
-      s++;
+      r++;
     }
+
+    res = Math.max(res, profit);
   }
 
-  return maxProfit;
+  return res;
 };
+
+console.log(maxProfit([7, 6, 4, 3, 1]));
