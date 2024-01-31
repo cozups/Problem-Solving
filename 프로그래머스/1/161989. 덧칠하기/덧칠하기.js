@@ -8,7 +8,6 @@ function solution(n, m, section) {
   }
 
   let cursor = 1;
-  let max = Math.max(...section);
 
   while (cursor < arr.length) {
     if (!arr[cursor]) {
