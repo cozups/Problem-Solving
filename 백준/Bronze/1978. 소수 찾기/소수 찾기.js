@@ -7,7 +7,7 @@ const nums = input[1].split(' ').map(Number);
 function isPrime(n) {
   if (n <= 1) return false;
 
-  for (let i = 2; i < Math.abs(n); i++) {
+  for (let i = 2; i * i <= n; i++) {
     if (n % i === 0) {
       return false;
     }
