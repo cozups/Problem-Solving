@@ -2,12 +2,17 @@ const fs = require('fs');
 const file = process.platform === 'linux' ? '/dev/stdin' : './input.txt';
 const input = fs.readFileSync(file).toString().trim().split('\n');
 
-let [a, b, c] = input.map(Number);
-let n = a * b * c;
-let arr = n.toString().split('').map(Number);
-let ans = new Array(10).fill(0);
-arr.forEach((a) => {
-  ans[a]++;
-});
+const a = +input[0];
+const b = +input[1];
+const c = +input[2];
 
-console.log(ans.join('\n'));
+let n = a * b * c;
+let arr = new Array(10).fill(0);
+while (n) {
+  let num = n % 10;
+  arr[num]++;
+
+  n = Math.floor(n / 10);
+}
+
+console.log(arr.join('\n'));
