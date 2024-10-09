@@ -19,10 +19,6 @@ for (let i = 0; i < Number(n); i++) {
       }
 
       const p = s.pop();
-      if (p === ')') {
-        ans.push('NO');
-        break;
-      }
     }
   }
 
