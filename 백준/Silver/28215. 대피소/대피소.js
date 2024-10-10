@@ -23,26 +23,23 @@ function getCombination(arr, k) {
   return set;
 }
 
-const set = getCombination(
-  Array.from({ length: n }, (_, i) => i),
-  k
-);
-
-let ans = Infinity;
-for (let s of set) {
-  let dists = [];
-  house.forEach((h, i) => {
-    if (s.indexOf(i) < 0) {
-      // 대피소가 아님
-      let dist = Infinity;
-      for (let j of s) {
-        // 대피소들과의 거리 중 가장 짧은 거리 구하기
-        dist = Math.min(dist, getDistance(h, house[j]));
-      }
-      dists.push(dist);
+function getMaxDist(comb) {
+  let arr = [];
+  for (let h of house) {
+    let minDist = Infinity;
+    for (let c of comb) {
+      let dist = getDistance(c, h);
+      minDist = Math.min(minDist, dist);
     }
-  });
-  ans = Math.min(ans, Math.max(...dists));
+    arr.push(minDist);
+  }
+
+  return Math.max(...arr);
 }
 
+const set = getCombination(house, k);
+let ans = Infinity;
+for (let comb of set) {
+  ans = Math.min(ans, getMaxDist(comb));
+}
 console.log(ans);
