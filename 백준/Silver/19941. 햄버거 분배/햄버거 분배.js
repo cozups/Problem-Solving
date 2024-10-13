@@ -1,21 +1,32 @@
 const fs = require('fs');
 const file = process.platform === 'linux' ? '/dev/stdin' : './input.txt';
-const inputs = fs.readFileSync(file).toString().trim().split('\n');
+const input = fs.readFileSync(file).toString().trim().split('\n');
 
-let [n, k] = inputs[0].split(' ').map(Number);
-let table = inputs[1].split('');
-let ans = 0;
-
+const [[n, k], arr] = [input[0].split(' ').map(Number), input[1].split('')];
+let cnt = 0;
 for (let i = 0; i < n; i++) {
-  if (table[i] === 'P') {
-    for (let j = i - k; j <= i + k; j++) {
-      if (j >= 0 && j < n && table[j] === 'H') {
-        table[j] = '-';
-        ans++;
+  if (arr[i] !== 'P') {
+    continue;
+  }
+
+  let flag = false;
+  for (let j = k; j > 0; j--) {
+    if (i - j >= 0 && arr[i - j] === 'H') {
+      cnt++;
+      arr[i - j] = 'X';
+      flag = true;
+      break;
+    }
+  }
+  if (!flag) {
+    for (let j = 1; j <= k; j++) {
+      if (i + j < n && arr[i + j] === 'H') {
+        cnt++;
+        arr[i + j] = 'X';
         break;
       }
     }
   }
 }
 
-console.log(ans);
+console.log(cnt);
