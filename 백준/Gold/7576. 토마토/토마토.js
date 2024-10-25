@@ -1,53 +1,50 @@
 const fs = require('fs');
 const file = process.platform === 'linux' ? '/dev/stdin' : './input.txt';
-const [meta, ...input] = fs.readFileSync(file).toString().trim().split('\n');
+const input = fs.readFileSync(file).toString().trim().split('\n');
 
-let [m, n] = meta.split(' ').map(Number);
-let box = [];
+let [[m, n], ...map] = input.map((s) => s.split(' ').map(Number));
+
 let q = [];
-input.forEach((s, i) => {
-  let row = s.split(' ').map(Number);
-  box.push(row);
-  row.forEach((n, j) => {
-    if (n === 1) {
+for (let i = 0; i < n; i++) {
+  for (let j = 0; j < m; j++) {
+    if (map[i][j] === 1) {
       q.push([i, j]);
     }
-  });
-});
-
-let dir = [
-  [0, 1],
-  [0, -1],
-  [1, 0],
-  [-1, 0],
-];
+  }
+}
 
 function bfs() {
+  let dy = [-1, 1, 0, 0];
+  let dx = [0, 0, -1, 1];
   let idx = 0;
-  // shift 메서드가 시간 초과의 원인이 됨 
   while (idx < q.length) {
-    let [a, b] = q[idx++];
+    let [y, x] = q[idx++];
+
     for (let i = 0; i < 4; i++) {
-      let nextA = a + dir[i][0];
-      let nextB = b + dir[i][1];
-      if (nextA < 0 || nextA >= n || nextB < 0 || nextB >= m) continue;
-      if (box[nextA][nextB] === 0) {
-        q.push([nextA, nextB]);
-        box[nextA][nextB] = box[a][b] + 1;
+      let ny = y + dy[i];
+      let nx = x + dx[i];
+
+      if (ny < 0 || ny >= n || nx < 0 || nx >= m) {
+        continue;
+      }
+      if (map[ny][nx] === 0) {
+        map[ny][nx] = map[y][x] + 1;
+        q.push([ny, nx]);
       }
     }
   }
 }
 
-bfs();
-let ans = 0;
-for (let i = 0; i < n; i++) {
-  for (let j = 0; j < m; j++) {
-    if (box[i][j] === 0) {
-      console.log(-1);
-      return;
+function getDay() {
+  let max = -1;
+  for (let arr of map) {
+    if (arr.includes(0)) {
+      return -1;
     }
-    ans = Math.max(ans, box[i][j]);
+    max = Math.max(max, ...arr);
   }
+  return max - 1;
 }
-console.log(ans - 1);
+
+bfs();
+console.log(getDay());
