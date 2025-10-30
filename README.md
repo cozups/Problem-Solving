@@ -36,4 +36,12 @@ Leetcode 문제 풀이
 |  |
 | ------- |
 | [0866-rectangle-overlap](https://github.com/cozups/Problem-Solving/tree/master/0866-rectangle-overlap) |
+## Array
+|  |
+| ------- |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/cozups/Problem-Solving/tree/master/0026-remove-duplicates-from-sorted-array) |
+## Two Pointers
+|  |
+| ------- |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/cozups/Problem-Solving/tree/master/0026-remove-duplicates-from-sorted-array) |
 <!---LeetCode Topics End-->
