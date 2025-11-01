@@ -47,6 +47,7 @@ Leetcode 문제 풀이
 |  |
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/cozups/Problem-Solving/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0125-valid-palindrome](https://github.com/cozups/Problem-Solving/tree/master/0125-valid-palindrome) |
 ## Hash Table
 |  |
 | ------- |
@@ -64,5 +65,6 @@ Leetcode 문제 풀이
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/cozups/Problem-Solving/tree/master/0049-group-anagrams) |
+| [0125-valid-palindrome](https://github.com/cozups/Problem-Solving/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/cozups/Problem-Solving/tree/master/0242-valid-anagram) |
 <!---LeetCode Topics End-->
