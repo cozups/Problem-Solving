@@ -44,6 +44,7 @@ Leetcode 문제 풀이
 | [0049-group-anagrams](https://github.com/cozups/Problem-Solving/tree/master/0049-group-anagrams) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/cozups/Problem-Solving/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0217-contains-duplicate](https://github.com/cozups/Problem-Solving/tree/master/0217-contains-duplicate) |
+| [0792-binary-search](https://github.com/cozups/Problem-Solving/tree/master/0792-binary-search) |
 ## Two Pointers
 |  |
 | ------- |
@@ -88,4 +89,8 @@ Leetcode 문제 풀이
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/cozups/Problem-Solving/tree/master/0155-min-stack) |
+## Binary Search
+|  |
+| ------- |
+| [0792-binary-search](https://github.com/cozups/Problem-Solving/tree/master/0792-binary-search) |
 <!---LeetCode Topics End-->
