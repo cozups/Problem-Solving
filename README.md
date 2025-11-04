@@ -93,4 +93,12 @@ Leetcode 문제 풀이
 |  |
 | ------- |
 | [0792-binary-search](https://github.com/cozups/Problem-Solving/tree/master/0792-binary-search) |
+## Linked List
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/cozups/Problem-Solving/tree/master/0206-reverse-linked-list) |
+## Recursion
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/cozups/Problem-Solving/tree/master/0206-reverse-linked-list) |
 <!---LeetCode Topics End-->
