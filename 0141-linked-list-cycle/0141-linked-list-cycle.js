@@ -12,14 +12,15 @@
  */
 var hasCycle = function (head) {
     // 리스트에 사이클이 있는지 확인
-
-    while (head) {
-        if (!head.visited) {
-            head.visited = true;
-        } else {
+    const visited = new Set();
+    let cur = head;
+    while(cur) {
+        if(visited.has(cur)) {
             return true;
+        } else {
+            visited.add(cur)
         }
-        head = head.next;
+        cur = cur.next;
     }
 
     return false;
