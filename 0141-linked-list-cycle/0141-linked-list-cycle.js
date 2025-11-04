@@ -12,15 +12,17 @@
  */
 var hasCycle = function (head) {
     // 리스트에 사이클이 있는지 확인
-    const visited = new Set();
-    let cur = head;
-    while(cur) {
-        if(visited.has(cur)) {
+    // fast, slow 포인터
+    let fast = head;
+    let slow = head;
+
+    while(fast && fast.next) {
+        fast = fast.next.next;
+        slow = slow.next;
+
+        if(fast === slow) {
             return true;
-        } else {
-            visited.add(cur)
         }
-        cur = cur.next;
     }
 
     return false;
