@@ -14,25 +14,16 @@
 var isSameTree = function (p, q) {
     // p와 q가 같은 트리인지 구분: 구조가 같고 값이 같은지
     // dfs로 트리를 순회하기
-    let pResult = [];
-    let qResult = [];
-    function dfs(root, arr) {
-        if (!root) {
-            arr.push(null);
-            return;
-        }
-
-        arr.push(root.val);
-        dfs(root.left, arr);
-        dfs(root.right, arr);
+    if(!p && !q) {
+        // 둘 다 null인 트리면 참
+        return true;
     }
 
-    dfs(p, pResult);
-    dfs(q, qResult);
-
-    if(pResult.length !== qResult.length) return false;
-    for(let i = 0; i<pResult.length; i++) {
-        if(pResult[i] !== qResult[i]) return false;
+    if(p && q && p.val === q.val) {
+        // 둘 다 null이 아닌 노드고 값이 같으면
+        // left subtree와 right subtree를 비교
+        return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
     }
-    return true;
+
+    return false;
 };
