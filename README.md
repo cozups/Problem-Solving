@@ -91,6 +91,7 @@ Leetcode 문제 풀이
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/cozups/Problem-Solving/tree/master/0155-min-stack) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/cozups/Problem-Solving/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Binary Search
 |  |
 | ------- |
@@ -115,6 +116,7 @@ Leetcode 문제 풀이
 | [0226-invert-binary-tree](https://github.com/cozups/Problem-Solving/tree/master/0226-invert-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/cozups/Problem-Solving/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/cozups/Problem-Solving/tree/master/0572-subtree-of-another-tree) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/cozups/Problem-Solving/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -139,6 +141,7 @@ Leetcode 문제 풀이
 | [0226-invert-binary-tree](https://github.com/cozups/Problem-Solving/tree/master/0226-invert-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/cozups/Problem-Solving/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/cozups/Problem-Solving/tree/master/0572-subtree-of-another-tree) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/cozups/Problem-Solving/tree/master/0789-kth-largest-element-in-a-stream) |
 ## String Matching
 |  |
 | ------- |
@@ -147,4 +150,16 @@ Leetcode 문제 풀이
 |  |
 | ------- |
 | [0572-subtree-of-another-tree](https://github.com/cozups/Problem-Solving/tree/master/0572-subtree-of-another-tree) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0789-kth-largest-element-in-a-stream](https://github.com/cozups/Problem-Solving/tree/master/0789-kth-largest-element-in-a-stream) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0789-kth-largest-element-in-a-stream](https://github.com/cozups/Problem-Solving/tree/master/0789-kth-largest-element-in-a-stream) |
+## Data Stream
+|  |
+| ------- |
+| [0789-kth-largest-element-in-a-stream](https://github.com/cozups/Problem-Solving/tree/master/0789-kth-largest-element-in-a-stream) |
 <!---LeetCode Topics End-->
