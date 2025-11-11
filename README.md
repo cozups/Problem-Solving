@@ -45,6 +45,7 @@ Leetcode 문제 풀이
 | [0049-group-anagrams](https://github.com/cozups/Problem-Solving/tree/master/0049-group-anagrams) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/cozups/Problem-Solving/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0217-contains-duplicate](https://github.com/cozups/Problem-Solving/tree/master/0217-contains-duplicate) |
+| [0747-min-cost-climbing-stairs](https://github.com/cozups/Problem-Solving/tree/master/0747-min-cost-climbing-stairs) |
 | [0792-binary-search](https://github.com/cozups/Problem-Solving/tree/master/0792-binary-search) |
 | [1127-last-stone-weight](https://github.com/cozups/Problem-Solving/tree/master/1127-last-stone-weight) |
 ## Two Pointers
@@ -81,6 +82,7 @@ Leetcode 문제 풀이
 | ------- |
 | [0070-climbing-stairs](https://github.com/cozups/Problem-Solving/tree/master/0070-climbing-stairs) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/cozups/Problem-Solving/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0747-min-cost-climbing-stairs](https://github.com/cozups/Problem-Solving/tree/master/0747-min-cost-climbing-stairs) |
 ## Sliding Window
 |  |
 | ------- |
