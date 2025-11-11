@@ -31,6 +31,7 @@ Leetcode 문제 풀이
 ## Math
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/cozups/Problem-Solving/tree/master/0070-climbing-stairs) |
 | [0866-rectangle-overlap](https://github.com/cozups/Problem-Solving/tree/master/0866-rectangle-overlap) |
 ## Geometry
 |  |
@@ -78,6 +79,7 @@ Leetcode 문제 풀이
 ## Dynamic Programming
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/cozups/Problem-Solving/tree/master/0070-climbing-stairs) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/cozups/Problem-Solving/tree/master/0121-best-time-to-buy-and-sell-stock) |
 ## Sliding Window
 |  |
@@ -164,4 +166,8 @@ Leetcode 문제 풀이
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/cozups/Problem-Solving/tree/master/0789-kth-largest-element-in-a-stream) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/cozups/Problem-Solving/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
