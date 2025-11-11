@@ -8,9 +8,9 @@ var climbStairs = function (n) {
     const d = new Array(n + 1).fill(0);
     d[0] = 0;
     d[1] = 1; // only 1 step
-
-    for (let i = 2; i <= n; i++) {
-        d[i] = Math.max(d[i - 1] + 1, d[i - 2] + 1, d[i - 1] + d[i - 2]);
+    d[2] = 2; // 1 step + 1 step, 2step
+    for (let i = 3; i <= n; i++) {
+        d[i] = d[i - 1] + d[i - 2];
     }
 
     return d[n];
